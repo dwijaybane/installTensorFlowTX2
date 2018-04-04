@@ -1,5 +1,6 @@
 # installTensorFlowTX2
 April 4, 2018
+JetsonHacks
 
 Install TensorFlow v1.6 on NVIDIA Jetson TX2 Development Kit
 
@@ -10,7 +11,11 @@ Jetson TX2 is flashed with JetPack 3.2 which installs:
 
 ### Pre-built installation
 
-If you are only interested in installing Tensorflow on the TX2, not building from source, pre-built wheel files are available here: https://github.com/jetsonhacks/installTensorFlowJetsonTX
+If you are only interested in installing Tensorflow on the TX2, not building from source, pre-built wheel files are available here: https://github.com/dwijaybane/installTensorFlowTX2/releases/tag/vL4T28.2TF1.6
+
+You can also use prebuilt bazel 0.11.1 by downloading bazel-11.1 and rename it and move to system:
+mv bazel-11.1 bazel
+sudo cp bazel /usr/local/bin/
 
 If you are interested in building from source, read on.
 ### Preparation
