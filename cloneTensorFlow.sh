@@ -8,10 +8,9 @@ INSTALL_DIR=$PWD
 cd $HOME
 git clone https://github.com/tensorflow/tensorflow.git
 cd tensorflow
-git checkout v1.3.0
-patch -p1 < $INSTALL_DIR/patches/tensorflow.patch
+git checkout v1.6.0
 # Patch up the Workspace.bzl for the Github Checksum issue
-patch -p1 < $INSTALL_DIR/patches/workspacebzl.patch
+#patch -p1 < $INSTALL_DIR/patches/workspacebzl.patch
 
 
 

@@ -1,13 +1,12 @@
 # installTensorFlowTX2
-September 13, 2017
-JetsonHacks
+April 4, 2018
 
-Install TensorFlow v1.3 on NVIDIA Jetson TX2 Development Kit
+Install TensorFlow v1.6 on NVIDIA Jetson TX2 Development Kit
 
-Jetson TX2 is flashed with JetPack 3.1 which installs:
-* L4T 28.1 an Ubuntu 16.04 64-bit variant (aarch64)
-* CUDA 8.0
-* cuDNN 6.0
+Jetson TX2 is flashed with JetPack 3.2 which installs:
+* L4T 28.2 an Ubuntu 16.04 64-bit variant (aarch64)
+* CUDA 9.0
+* cuDNN 7.0.5
 
 ### Pre-built installation
 
@@ -30,10 +29,10 @@ TensorFlow should be built in the following order:
 ## For Python 2.7
 
 #### installPrerequisites.sh
-Installs Java and other dependencies needed. Also builds Bazel version 0.5.2.
+Installs Java and other dependencies needed. Also builds Bazel version 0.11.1.
 
 #### cloneTensorFlow.sh
-Git clones v1.3.0 from the TensorFlow repository and patches the source code for aarch64
+Git clones v1.6.0 from the TensorFlow repository and patches the source code for aarch64
 
 #### setTensorFlowEV.sh
 Sets up the TensorFlow environment variables. This script will ask for the default python library path. There are many settings to chose from, the script picks the usual suspects. Uses python 2.7.
@@ -41,10 +40,10 @@ Sets up the TensorFlow environment variables. This script will ask for the defau
 ## For Python 3.5
 
 #### installPrerequisitesPy3.sh
-Installs Java and other dependencies needed. Also builds Bazel version 0.5.2.
+Installs Java and other dependencies needed. Also builds Bazel version 0.11.1.
 
 #### cloneTensorFlow.sh
-Git clones v1.3.0 from the TensorFlow repository and patches the source code for aarch64
+Git clones v1.6.0 from the TensorFlow repository and patches the source code for aarch64
 
 #### setTensorFlowEVPy3.sh
 Sets up the TensorFlow environment variables. This script will ask for the default python library path. There are many settings to chose from, the script picks the usual suspects. Uses python 3.5.
@@ -79,6 +78,11 @@ This TensorFlow installation procedure was derived from these discussion threads
 </ul>
 
 ### Release Notes
+April 4, 2018
+* L4T 28.2 (JetPack 3.2)
+* TensorFlow 1.6
+* Without TensorRT support
+
 September 13, 2017
 * L4T 28.1 (JetPack 3.1)
 * TensorFlow 1.3
