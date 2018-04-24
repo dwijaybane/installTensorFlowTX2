@@ -11,7 +11,7 @@ Jetson TX2 is flashed with JetPack 3.2 which installs:
 
 ### Pre-built installation
 
-If you are only interested in installing Tensorflow on the TX2, not building from source, pre-built wheel files are available here: https://github.com/dwijaybane/installTensorFlowTX2/releases/tag/vL4T28.2TF1.6
+If you are only interested in installing Tensorflow on the TX2, not building from source, pre-built wheel files are available here: https://github.com/dwijaybane/installTensorFlowTX2/releases
 
 You can also use prebuilt bazel 0.11.1 by downloading bazel-11.1 and rename it and move to system:
 mv bazel-11.1 bazel
